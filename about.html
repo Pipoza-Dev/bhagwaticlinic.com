@@ -1,489 +1,402 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Heritage & Woodcraft Guild — CASA ANTICA | Crafted by PipoZa Dev Studio</title>
-  <meta name="description" content="Learn how CASA ANTICA crafts customized modular beds, luxury kitchens, dining sets, center tables, wardrobes, and corporate furniture as per customers' design, ideas & living.">
+  <title>About Dr. Tanu Gupta & Clinic | Bhagwati Dental Clinic Jwalapur</title>
+  <meta name="description" content="Learn about Dr. Tanu Gupta (MDS Endodontist & Certified Implantologist, 18+ Yrs Exp) and Bhagwati Dental Clinic & Implant Centre in Ranipur More, Jwalapur, Haridwar. High sterilization, modern operatory, consultation &#8377;200.">
   
-  <link rel="icon" type="image/png" href="logo-symbol.png">
-
-  <!-- Main Folder Stylesheets (No Sub-Folders) -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="components.css">
-  <link rel="stylesheet" href="animations.css">
-  <link rel="stylesheet" href="responsive.css">
-
-  <!-- Immediate Theme & Clean URL Initializer (Eliminates Flash & Cleans URL Bar to /index, /products) -->
-  <script>
-      try {
-        let savedMode = localStorage.getItem('casa-mode') || 'coffee';
-        let savedTheme = localStorage.getItem('casa-theme') || 'dark';
-        if (savedTheme === 'classic') { savedMode = 'classic'; savedTheme = 'light'; }
-        else if (savedTheme === 'default') { savedTheme = 'dark'; }
-        if (!['coffee', 'classic'].includes(savedMode)) savedMode = 'coffee';
-        if (!['dark', 'light'].includes(savedTheme)) savedTheme = 'dark';
-        document.documentElement.setAttribute('data-mode', savedMode);
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        document.documentElement.setAttribute('data-palette', savedMode + '-' + savedTheme);
-      } catch (e) {}
-
-        if (window.location.protocol.startsWith('http')) {
-          const pathname = window.location.pathname;
-
-          let baseDir = '/';
-          if (window.location.hostname.endsWith('github.io')) {
-            const parts = pathname.split('/').filter(Boolean);
-            const userDomainPrefix = window.location.hostname.split('.')[0];
-            if (parts.length > 0 && parts[0] !== userDomainPrefix) {
-              baseDir = '/' + parts[0] + '/';
-            }
-          } else {
-            const knownPages = ['index', 'home', 'experience-studios', 'about', 'reviews', 'contact'];
-            const cleanPath = pathname.replace(/\/+$/, '');
-            const lastSlash = cleanPath.lastIndexOf('/');
-            const lastSegment = (lastSlash !== -1) ? cleanPath.substring(lastSlash + 1) : cleanPath;
-            const cleanSegment = lastSegment.replace(/\.html$/, '');
-
-            if (knownPages.includes(cleanSegment)) {
-              baseDir = (lastSlash !== -1) ? cleanPath.substring(0, lastSlash + 1) : '/';
-            } else {
-              baseDir = cleanPath ? (cleanPath + '/') : '/';
-            }
-          }
-
-          const cleanPath = pathname.replace(/\/+$/, '');
-          const lastSlash = cleanPath.lastIndexOf('/');
-          const lastSegment = (lastSlash !== -1) ? cleanPath.substring(lastSlash + 1) : cleanPath;
-          const cleanSegment = lastSegment.replace(/\.html$/, '');
-
-          let pageSlug = 'index';
-          if (['experience-studios', 'about', 'reviews', 'contact'].includes(cleanSegment)) {
-            pageSlug = cleanSegment;
-          }
-
-          const targetUrl = baseDir + pageSlug;
-          if (pathname !== targetUrl) {
-            window.history.replaceState(null, '', targetUrl + window.location.search + window.location.hash);
-          }
-        }
-      } catch (e) {}
-    })();
-  </script>
+  <link rel="icon" type="image/png" href="Company_Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="grain-overlay"></div>
-
-  <!-- Ambient Moving Liquid Glass Canvas Background with Moving Color Gems -->
-  <div class="ambient-bg" aria-hidden="true">
-    <div class="ambient-mesh"></div>
-    <div class="liquid-blob blob-amber-1"></div>
-    <div class="liquid-blob blob-caramel-1"></div>
-    <div class="liquid-blob blob-copper-1"></div>
-    <div class="liquid-gem gem-amber"></div>
-    <div class="liquid-gem gem-caramel"></div>
-    <div class="liquid-gem gem-bronze"></div>
-  </div>
-
-  <!-- Top Announcement Bar (Continuous Luxury Marquee Ticker) -->
-  <aside class="announcement-bar" aria-label="Craftsmanship Guild Announcement">
-    <div class="announcement-track">
-      <div class="announcement-slide">
-        <span>✨ CASA ANTICA · IMPORTER & CUSTOMIZED MODULAR FURNITURE MAKER</span>
-        <span class="ticker-sep">✦</span>
-        <span>Beds · Kitchens · Dining Sets · Center Tables · Wardrobes · Corporate Furniture</span>
-        <span class="ticker-sep">✦</span>
-        <span>Crafted As Per Customer's Design, Ideas & Living</span>
-        <span class="ticker-sep">✦</span>
-        <span>Surat HQ & Pan-India Studios</span>
-        <span class="ticker-sep">✦</span>
-        <span class="pipoza-pill">Crafted by <a href="https://pipoza.s.gy/pipoza.in" target="_blank" rel="noopener">PipoZa Dev Studio</a></span>
-        <span class="ticker-sep">✦</span>
-        <span>📞 WhatsApp: +91 832 001 2921</span>
-        <span class="ticker-sep">✦</span>
-        <span>✉️ casaanticasurat@gmail.com</span>
-        <span class="ticker-sep">✦</span>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <div class="live-status-pill">
+          <span class="status-dot"></span>
+          <span class="status-label">Checking Hours...</span>
+        </div>
+        <div class="topbar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>GF-9, Super Complex, Ranipur More, Jwalapur, Haridwar</span>
+        </div>
       </div>
-      <div class="announcement-slide" aria-hidden="true">
-        <span>✨ CASA ANTICA · IMPORTER & CUSTOMIZED MODULAR FURNITURE MAKER</span>
-        <span class="ticker-sep">✦</span>
-        <span>Beds · Kitchens · Dining Sets · Center Tables · Wardrobes · Corporate Furniture</span>
-        <span class="ticker-sep">✦</span>
-        <span>Crafted As Per Customer's Design, Ideas & Living</span>
-        <span class="ticker-sep">✦</span>
-        <span>Surat HQ & Pan-India Studios</span>
-        <span class="ticker-sep">✦</span>
-        <span class="pipoza-pill">Crafted by <a href="https://pipoza.s.gy/pipoza.in" target="_blank" rel="noopener">PipoZa Dev Studio</a></span>
-        <span class="ticker-sep">✦</span>
-        <span>📞 WhatsApp: +91 832 001 2921</span>
-        <span class="ticker-sep">✦</span>
-        <span>✉️ casaanticasurat@gmail.com</span>
-        <span class="ticker-sep">✦</span>
+      <div class="topbar-right">
+        <div class="topbar-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>Consultation Fee: <strong>&#8377;200 only</strong></span>
+        </div>
+        <div class="topbar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+918126733498" style="color: #fff; font-weight: 700;">+91 81267 33498</a>
+        </div>
       </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- Header -->
-  <header class="navbar-wrapper">
-    <nav class="navbar" aria-label="Main Navigation">
-      <a href="index.html" class="brand-logo" aria-label="CASA ANTICA Homepage">
-        <!-- Desktop / Full View: 1st Logo (With name) -->
-        <div class="brand-logo-full">
-          <img src="logo.png" alt="CASA ANTICA — Importer & Customized Modular Furniture Maker" />
-        </div>
-        <!-- Compact / Mobile View: 2nd Simple Logo + Name -->
-        <div class="brand-logo-compact">
-          <div class="logo-symbol">
-            <img src="logo-symbol.png" alt="CASA ANTICA" />
-          </div>
-          <div class="brand-text">
-            <span class="brand-name">CASA ANTICA</span>
-          </div>
+  <!-- MAIN NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-link">
+        <img src="Company_Logo.png" alt="Bhagwati Dental Clinic Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-name">Bhagwati Dental Clinic</span>
+          <span class="brand-subtitle">& Implant Centre &bull; Jwalapur</span>
         </div>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="experience-studios.html" class="nav-link">Visit Studios</a></li>
-        <li><a href="about.html" class="nav-link active">Our Heritage</a></li>
-        <li><a href="reviews.html" class="nav-link">Client Reviews</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="about.html" class="nav-link active">About Us <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="about.html#doctor"><i class="fas fa-user-md"></i> Dr. Tanu Gupta (MDS)</a></li>
+            <li class="dropdown-item"><a href="about.html#operatory"><i class="fas fa-hospital"></i> Operatory & Sterilization</a></li>
+            <li class="dropdown-item"><a href="about.html#mission"><i class="fas fa-heart-pulse"></i> Patient Philosophy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link">Treatments <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu wide">
+            <li class="dropdown-item"><a href="root-canal.html"><i class="fas fa-tooth"></i> Root Canal (RCT) <span class="badge">Specialty</span></a></li>
+            <li class="dropdown-item"><a href="implants.html"><i class="fas fa-shield-virus"></i> Dental Implants <span class="badge">Certified</span></a></li>
+            <li class="dropdown-item"><a href="services.html#crowns"><i class="fas fa-crown"></i> Crowns & Bridges</a></li>
+            <li class="dropdown-item"><a href="services.html#scaling"><i class="fas fa-pump-medical"></i> Ultrasonic Scaling</a></li>
+            <li class="dropdown-item"><a href="services.html#fillings"><i class="fas fa-fill-drip"></i> Composite Fillings</a></li>
+            <li class="dropdown-item"><a href="services.html#extractions"><i class="fas fa-bone"></i> Painless Extractions</a></li>
+            <li class="dropdown-item"><a href="services.html"><i class="fas fa-list-check"></i> View All Treatments &rarr;</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="pricing-hours.html" class="nav-link">Hours & Fee</a></li>
+        <li class="nav-item"><a href="appointment.html" class="nav-link">Book Appointment</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact & Map</a></li>
       </ul>
 
-      <div class="nav-actions">
-        <!-- Dual Mode & Theme Palette Controller -->
-        <div class="palette-controller" role="region" aria-label="Color Mode and Theme Selector">
-          <!-- Mode Pill: Coffee vs Classic -->
-          <div class="palette-segmented mode-segmented" role="radiogroup" aria-label="Design Mode">
-            <button type="button" class="palette-seg-btn active" data-mode-val="coffee" title="Coffee Mode (Warm Artisan Woods)">
-              <span class="seg-icon">☕</span>
-              <span class="seg-label">Coffee</span>
-            </button>
-            <button type="button" class="palette-seg-btn" data-mode-val="classic" title="Classic Mode (Signature White & #C42720)">
-              <span class="seg-icon">🏛️</span>
-              <span class="seg-label">Classic</span>
-            </button>
-          </div>
-          
-          <!-- Theme Pill: Dark vs Light -->
-          <div class="palette-segmented theme-segmented" role="radiogroup" aria-label="Visual Theme">
-            <button type="button" class="palette-seg-btn active" data-theme-val="dark" title="Dark Theme">
-              <span class="seg-icon">🌙</span>
-            </button>
-            <button type="button" class="palette-seg-btn" data-theme-val="light" title="Light Theme">
-              <span class="seg-icon">☀️</span>
-            </button>
+      <div class="nav-cta">
+        <a href="appointment.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-calendar-check"></i> Book Visit (&#8377;200)
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER WITH BREADCRUMBS -->
+  <section class="page-banner">
+    <div class="container page-banner-content">
+      <div class="breadcrumbs">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <span>/</span>
+        <span class="current">About Us</span>
+      </div>
+      <h1>About Bhagwati Dental Clinic & Dr. Tanu Gupta</h1>
+      <p>
+        Over 18 years of specialized clinical dentistry, tooth-saving rotary endodontics, certified implantology, and patient-first care in Haridwar.
+      </p>
+    </div>
+  </section>
+
+  <!-- DOCTOR DETAILED BIOGRAPHY -->
+  <section id="doctor" class="content-section alt">
+    <div class="container">
+      <div class="two-col-grid">
+        <div>
+          <div class="doctor-card-frame">
+            <span class="doctor-badge-floating"><i class="fas fa-user-md"></i> Founder & Lead Specialist</span>
+            <div class="doctor-avatar-circle">
+              <img src="dr-tanu-gupta.png" alt="Dr. Tanu Gupta - Endodontist & Certified Implantologist" class="doctor-photo-img">
+            </div>
+            <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--primary-deep); margin-bottom: 0.25rem;">Dr. Tanu Gupta</h3>
+            <p style="font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem;">
+              BDS (2008), MDS Endodontics (2013), Certified Implantologist
+            </p>
+            <div class="doctor-qual-pills">
+              <span class="qual-tag"><i class="fas fa-award"></i> 18+ Yrs Clinical Mastery</span>
+              <span class="qual-tag"><i class="fas fa-university"></i> Bapuji College (MDS)</span>
+              <span class="qual-tag"><i class="fas fa-certificate"></i> Certified Implantologist</span>
+            </div>
+            <div style="background-color: #fff; border-radius: var(--radius-sm); padding: 0.85rem; margin-top: 1rem; border: 1px solid var(--border-color); display: flex; justify-content: space-around;">
+              <a href="https://www.practo.com/Haridwar/doctor/dr-tanu-gupta-dentist?practice_id=721434&referrer=establishment_profile" target="_blank" style="font-size: 0.85rem; font-weight: 700; color: var(--primary);">
+                <i class="fas fa-check-circle"></i> Practo Profile
+              </a>
+              <a href="https://www.justdial.com/Haridwar/Dr-Tanu-Gupta-Bhagwati-Dental-Clinic-and-Implant-Centre-Opposite-Idbi-Bank-Haridwar-H-O/9999P1334-1334-170114121429-G9B4_BZDET" target="_blank" style="font-size: 0.85rem; font-weight: 700; color: #f59e0b;">
+                <i class="fas fa-star"></i> Justdial 4.5&#9733;
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Quick Fallback / Mobile Theme Cycle Button -->
-        <button class="action-icon-btn theme-toggle-btn" aria-label="Cycle atmospheric mode and theme" title="Cycle Atmosphere">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
+        <div>
+          <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic & Clinical Background</span>
+          <h2 class="section-title">Clinical Mastery & Compassionate Dentistry</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            Dr. Tanu Gupta earned her Bachelor of Dental Surgery (BDS) in 2008 from Dr. B.R. Ambedkar University, followed by an intensive 
+            Master of Dental Surgery (MDS) in Conservative Dentistry & Endodontics in 2013 from the prestigious <strong>Bapuji College of Dental Sciences</strong>, Davangere — one of India's top dental institutes.
+          </p>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 1.5rem;">
+            Having completed extensive post-graduate advanced certifications in <strong>Dental Implantology</strong>, she combines the art of micro-endodontic root canal treatments (saving natural teeth) with permanent titanium implant restorations (replacing lost teeth) to provide complete rehabilitation for Haridwar residents.
+          </p>
 
-        <a href="https://wa.me/918320012921?text=Hi%20CASA%20ANTICA!%20I%20would%20like%20to%20consult%20on%20customized%20modular%20furniture." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
-          💬 WhatsApp
-        </a>
+          <div class="two-col-grid" style="gap: 1rem; margin-bottom: 1.75rem;">
+            <div style="background-color: var(--bg-page); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <h5 style="color: var(--primary-deep); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem;"><i class="fas fa-tooth" style="color: var(--primary); margin-right: 0.35rem;"></i> Endodontics Expertise</h5>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Mastery in complex rotary canal instrumentation, curved canals, retreatment, and single-sitting RCTs.</p>
+            </div>
+            <div style="background-color: var(--bg-page); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <h5 style="color: var(--primary-deep); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem;"><i class="fas fa-shield-virus" style="color: var(--accent); margin-right: 0.35rem;"></i> Implantology Certification</h5>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Surgical placement of titanium implants, bone preservation, and CAD/CAM custom prosthetics.</p>
+            </div>
+          </div>
 
-        <button class="mobile-toggle" aria-label="Open menu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
+          <a href="appointment.html" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i> Book Consultation with Dr. Tanu Gupta (&#8377;200)
+          </a>
+        </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </section>
 
-  <main style="padding-top: 24px; padding-bottom: 72px;">
+  <!-- OPERATORY & STERILIZATION STANDARDS -->
+  <section id="operatory" class="content-section">
     <div class="container">
-      
-      <!-- Heritage Intro -->
-      <div class="section-header reveal-init">
-        <div class="section-eyebrow">Our Founding Manifesto</div>
-        <h1 style="font-size: clamp(2.2rem, 4vw, 3.4rem); margin-bottom: 16px;">The Authentic Woodcraft Guild</h1>
-        <p class="section-subtitle">
-          Founded in 2011, CASA ANTICA unites generational woodworking artisans with thoughtful architectural design. We build heirloom furniture designed to live with your family for generations.
+      <div class="text-center">
+        <span class="section-tag accent"><i class="fas fa-hospital"></i> Infrastructure & Hygiene</span>
+        <h2 class="section-title">Clean Operatory & Infection Control</h2>
+        <p class="section-subtitle mx-auto">
+          We maintain rigorous hospital-level sanitization protocols and comfortable onsite patient amenities.
         </p>
       </div>
 
-      <!-- Story Hero Grid -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 52px); align-items: center; margin-bottom: 64px;" class="grid-2">
-        <div class="reveal-init">
-          <div class="glass-card" style="padding: 10px; overflow: hidden;">
-            <img 
-              src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=1200&q=80" 
-              alt="Artisan Timber Seasoning Workshop" 
-              style="width: 100%; border-radius: var(--radius-md); object-fit: cover; aspect-ratio: 4/3;"
-            />
+      <div class="three-col-grid" style="margin-top: 3.5rem;">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="trust-icon" style="margin-bottom: 1rem;"><i class="fas fa-pump-medical"></i></div>
+          <h4>Class-B Vacuum Autoclave</h4>
+          <p>
+            Every reusable instrument undergoes ultrasonic washing and high-temperature vacuum steam autoclaving in sealed sterile pouches, opened right in front of the patient.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="trust-icon accent" style="margin-bottom: 1rem;"><i class="fas fa-chair"></i></div>
+          <h4>Ergonomic Operatory Dental Chair</h4>
+          <p>
+            Our fully equipped modern operatory features an ergonomic patient chair with integrated fiber-optic handpieces and micro-suction for anxiety-free procedures.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="trust-icon" style="margin-bottom: 1rem;"><i class="fas fa-restroom"></i></div>
+          <h4>Dedicated Patient Restroom Access</h4>
+          <p>
+            A dedicated, hygienic, and sanitized onsite restroom is available directly within the facility for the comfort and dignity of patients and accompanying family members.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="trust-icon accent" style="margin-bottom: 1rem;"><i class="fas fa-microchip"></i></div>
+          <h4>Digital Apex Locators & Rotary NiTi</h4>
+          <p>
+            High-precision electronic root canal length measuring systems eliminate guesswork and multiple sittings, making root canals precise and painless.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">05</div>
+          <div class="trust-icon" style="margin-bottom: 1rem;"><i class="fas fa-shield-virus"></i></div>
+          <h4>100% Disposable Exam Kits</h4>
+          <p>
+            Gloves, masks, patient drapes, suction tips, and irrigation needles are strictly single-use and disposed of in medical-grade bio-waste bins.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">06</div>
+          <div class="trust-icon accent" style="margin-bottom: 1rem;"><i class="fas fa-snowflake"></i></div>
+          <h4>Air-Conditioned Waiting Lounge</h4>
+          <p>
+            A soothing, air-conditioned waiting environment with drinking water and zero long waiting times due to scheduled slot allocations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINICAL MISSION & VALUES -->
+  <section id="mission" class="content-section alt">
+    <div class="container">
+      <div class="two-col-grid" style="align-items: center;">
+        <div>
+          <span class="section-tag"><i class="fas fa-heart-pulse"></i> Our Core Ethics</span>
+          <h2 class="section-title">Patient-First Philosophy</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            At Bhagwati Dental Clinic, our medical approach is built on three unwavering principles:
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; color: var(--text-main); margin-bottom: 2rem;">
+            <li style="display: flex; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem; margin-top: 0.15rem;"></i>
+              <div>
+                <strong>Preserving Natural Teeth:</strong> Extraction is always the last resort. We exhaust every advanced endodontic treatment to save your natural biological teeth.
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem; margin-top: 0.15rem;"></i>
+              <div>
+                <strong>Transparent Fee Structure:</strong> Complete honesty before any treatment begins. Initial consultation is strictly &#8377;200, with no hidden laboratory charges.
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--success); font-size: 1.2rem; margin-top: 0.15rem;"></i>
+              <div>
+                <strong>Painless Clinical Experience:</strong> Gentle local anesthesia techniques and modern rotary instruments ensure you never dread visiting the dentist again.
+              </div>
+            </li>
+          </ul>
+
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-calendar-check"></i> Schedule Your Consultation (&#8377;200)
+          </a>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #0f3652, #0369a1); border-radius: var(--radius-lg); padding: 3rem 2.5rem; color: #fff;">
+          <h3 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 1rem;">Clinic Location</h3>
+          <p style="color: #e0f2fe; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            Located right at the bustling center of Jwalapur at Ranipur More, easily accessible from Haridwar City, BHEL township, Kankhal, and Roorkee.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.925rem; color: #bae6fd; margin-bottom: 2rem;">
+            <div><i class="fas fa-map-pin" style="color: #38bdf8; width: 20px;"></i> Shop GF-9, Super Complex, Ranipur More, Jwalapur</div>
+            <div><i class="fas fa-building" style="color: #38bdf8; width: 20px;"></i> Landmarks: Opposite IDBI Bank, Near City Hospital</div>
+            <div><i class="fas fa-phone-alt" style="color: #38bdf8; width: 20px;"></i> +91 81267 33498</div>
+          </div>
+          <a href="contact.html" class="btn btn-secondary" style="background: #fff; color: var(--primary-deep); width: 100%;">
+            <i class="fas fa-directions"></i> View Map & Direction Guide &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RICH FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-cta-banner">
+      <div class="container">
+        <div class="footer-cta-grid">
+          <div class="footer-cta-text">
+            <h3>Need Urgent Dental Care or a Consultation in Jwalapur?</h3>
+            <p>Dr. Tanu Gupta is available for specialized Root Canals, Implants & Emergency Relief. Nominal fee of &#8377;200.</p>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="tel:+918126733498" class="btn btn-secondary btn-sm" style="background: #fff; color: var(--primary-deep);"><i class="fas fa-phone-alt"></i> Call +91 81267 33498</a>
+            <a href="appointment.html" class="btn btn-primary btn-sm" style="background: var(--primary-deep); color: #fff;"><i class="fas fa-calendar-alt"></i> Book Appointment (&#8377;200)</a>
           </div>
         </div>
-
-        <div class="reveal-init reveal-delay-2">
-          <h2 style="margin-bottom: 14px;">The Rejection of Fast Disposable Furniture</h2>
-          <p style="margin-bottom: 16px; line-height: 1.7; color: var(--text-sand);">
-            Modern furniture retail became overwhelmed with hollow particle board flat-packs designed to fail after a couple of moves.
-          </p>
-          <p style="margin-bottom: 22px; line-height: 1.7; color: var(--text-sand);">
-            <strong>CASA ANTICA</strong> chose authentic permanence. We source whole logs of sustainable American Walnut, Burmese Teak, and White Oak, season them in our specialized solar-assisted kilns to exactly 9% moisture content, and handcraft each piece with butterfly keys and Japanese blind joinery.
-          </p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <a href="experience-studios.html" class="btn btn-primary">Visit Our Flagship Studios</a>
-            <a href="contact.html" class="btn btn-secondary">Contact Concierge</a>
-          </div>
-        </div>
       </div>
+    </div>
 
-      <!-- Meet Master Artisans -->
-      <div class="section-header reveal-init">
-        <div class="section-eyebrow">The Guild Masters</div>
-        <h2 class="section-title">Hands That Shape Every Contour</h2>
-        <p class="section-subtitle">Our furniture is never stamped out by impersonal machines. Meet the senior craftsmen and women who bring your pieces to life.</p>
-      </div>
-
-      <div class="grid-3 horizontal-scroll-mobile reveal-init" style="margin-bottom: 64px;">
-        
-        <!-- Artisan 1 -->
-        <div class="glass-card" style="padding: 24px; text-align: center;">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" alt="Master Joiner Baldev Singh" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px; border: 3px solid var(--amber-primary);" />
-          <h3 style="font-size: 1.15rem; margin-bottom: 4px;">Baldev Singh</h3>
-          <span style="font-size: 0.78rem; color: var(--amber-light); font-weight: 700; text-transform: uppercase;">Master Joiner & Guild Elder (29 Yrs)</span>
-          <p style="font-size: 0.85rem; color: var(--text-sand); margin-top: 10px; line-height: 1.6;">
-            Specializes in traditional Japanese blind mortise-and-tenon joints and butterfly keys. Hand-inspects every solid walnut dining slab before final finishing.
-          </p>
-        </div>
-
-        <!-- Artisan 2 -->
-        <div class="glass-card" style="padding: 24px; text-align: center;">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Lakshmi Narayan" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px; border: 3px solid var(--amber-primary);" />
-          <h3 style="font-size: 1.15rem; margin-bottom: 4px;">Lakshmi Narayan</h3>
-          <span style="font-size: 0.78rem; color: var(--amber-light); font-weight: 700; text-transform: uppercase;">Head of Upholstery & Leather (21 Yrs)</span>
-          <p style="font-size: 0.85rem; color: var(--text-sand); margin-top: 10px; line-height: 1.6;">
-            Trained on full-grain vegetable-tanned Italian saddlery. Directs our hand-stitched French textured bouclé and leather sectional lines.
-          </p>
-        </div>
-
-        <!-- Artisan 3 -->
-        <div class="glass-card" style="padding: 24px; text-align: center;">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Arjun Nair" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px; border: 3px solid var(--amber-primary);" />
-          <h3 style="font-size: 1.15rem; margin-bottom: 4px;">Arjun Nair</h3>
-          <span style="font-size: 0.78rem; color: var(--amber-light); font-weight: 700; text-transform: uppercase;">Lead Architectural Designer (14 Yrs)</span>
-          <p style="font-size: 0.85rem; color: var(--text-sand); margin-top: 10px; line-height: 1.6;">
-            Bridges Scandinavian organic minimalism with Indian living proportions. Oversees bespoke client CAD blueprints and dimension tailoring.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Sustainability & 10 Trees Forestry Pledge -->
-      <div class="glass-card reveal-init" style="padding: clamp(28px, 4vw, 48px); background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(22, 14, 10, 0.8) 100%); border: 1px solid #10b981;">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 44px); align-items: center;" class="grid-2">
-          <div>
-            <span class="badge-pill badge-green" style="margin-bottom: 10px;">Environmental Stewardship</span>
-            <h2 style="font-size: 1.9rem; margin-bottom: 14px;">10 Native Saplings Planted for Every Single Tree Harvested</h2>
-            <p style="color: var(--text-sand); line-height: 1.7; margin-bottom: 16px; font-size: 0.95rem;">
-              True luxury must not deplete the earth. We only harvest from licensed FSC-certified sustainable community plantations.
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <img src="Company_Logo.png" alt="Bhagwati Dental Clinic Logo" style="height: 48px; background: #fff; padding: 3px; border-radius: 6px;">
+              <div>
+                <h4 style="color: #fff; font-size: 1.15rem; font-weight: 800; margin: 0; line-height: 1.2;">Bhagwati Dental Clinic</h4>
+                <span style="font-size: 0.75rem; color: #38bdf8; text-transform: uppercase; font-weight: 700;">& Implant Centre</span>
+              </div>
+            </div>
+            <p>
+              Premier dental facility in Jwalapur, Haridwar specializing in pain-free single-sitting root canals, titanium dental implants, aesthetic prosthetics, and family dental care.
             </p>
-            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: var(--text-sand);">
-              <li style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: #10b981;">✓</span> 100% Zero-VOC non-toxic plant wax and organic food-safe seed oils
-              </li>
-              <li style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: #10b981;">✓</span> 120,000+ Native saplings planted across certified community reserves
-              </li>
-              <li style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: #10b981;">✓</span> Solar-assisted kiln seasoning workshops with zero fossil fuels
-              </li>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="https://www.google.com/maps/place/Bhagwati+dental+clinic+-+Best+Dental+Clinic+in+Haridwar+%7C+Best+Dentist+in+Haridwar/@29.9336813,78.1340759,17z/data=!3m1!4b1!4m6!3m5!1s0x390946fde534a3d1:0xe40599b0adf1096f!8m2!3d29.9336813!4d78.1340759!16s%2Fg%2F1q6jhk46k" target="_blank" class="btn btn-secondary btn-sm" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;"><i class="fab fa-google"></i> Google Maps</a>
+              <a href="https://www.justdial.com/Haridwar/Bhagwati-Dental-Clinic-and-Implant-Centre-Opposite-Idbi-Bank-Haridwar-H-O/9999P1334-1334-150813125243-T2Z9_BZDET" target="_blank" class="btn btn-secondary btn-sm" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-star" style="color: #f59e0b;"></i> Justdial 4.5&#9733;</a>
+              <a href="https://www.practo.com/Haridwar/doctor/dr-tanu-gupta-dentist?practice_id=721434&referrer=establishment_profile" target="_blank" class="btn btn-secondary btn-sm" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-check-circle" style="color: #38bdf8;"></i> Practo</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Treatments</h4>
+            <ul class="footer-links-list">
+              <li><a href="root-canal.html">Single-Sitting RCT</a></li>
+              <li><a href="implants.html">Dental Implants</a></li>
+              <li><a href="services.html#crowns">Zirconia Crowns & Bridges</a></li>
+              <li><a href="services.html#scaling">Ultrasonic Scaling</a></li>
+              <li><a href="services.html#fillings">Composite Fillings</a></li>
+              <li><a href="services.html#extractions">Painless Extractions</a></li>
+              <li><a href="services.html">All Dental Procedures &rarr;</a></li>
             </ul>
           </div>
 
-          <div style="text-align: center;">
-            <div style="font-family: var(--font-heading); font-size: 4.2rem; font-weight: 900; color: #10b981; line-height: 1;" data-counter-target="120000" data-counter-suffix="+">
-              120,000+
-            </div>
-            <div style="font-size: 1.05rem; color: #fff; font-weight: 700; margin-top: 6px;">Native Hardwood Trees Replanted</div>
-            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">Ensuring thriving green canopy for the next century.</p>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Dr. Tanu Gupta</a></li>
+              <li><a href="services.html">Services Catalog</a></li>
+              <li><a href="pricing-hours.html">Timings & &#8377;200 Fee</a></li>
+              <li><a href="appointment.html">Book Appointment</a></li>
+              <li><a href="contact.html">Clinic Location & Map</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
 
-    </div>
-  </main>
-
-  <!-- ==========================================================================
-       SITE FOOTER (UNIFIED ACROSS ALL PAGES)
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Col 1: Brand & Craft Philosophy -->
-        <div class="footer-brand">
-          <a href="index.html" class="footer-brand-link" aria-label="CASA ANTICA Homepage">
-            <div class="footer-logo-card">
-              <img src="logo.png" alt="CASA ANTICA — Importer & Customized Modular Furniture Maker" class="footer-logo-img" />
+          <div class="footer-col">
+            <h4>Clinic & Contact</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>GF-9 Super Complex, Ranipur More, Opp IDBI Bank / Near City Hospital, Jwalapur, Haridwar – 249407</div>
             </div>
-          </a>
-          <p>
-            Importer and customized modular beds, luxury kitchens, dining sets, center tables, wardrobes, and corporate furniture maker — crafted as per customers' design, ideas & living.
-          </p>
-          <div class="footer-social-links">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="https://wa.me/918320012921" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            </a>
-            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Pinterest">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="4" x2="12" y2="20"></line><circle cx="12" cy="12" r="8"></circle></svg>
-            </a>
-            <a href="mailto:casaanticasurat@gmail.com" class="footer-social-btn" aria-label="Email Concierge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div><a href="tel:+918126733498" style="color: #38bdf8; font-weight: 700;">+91 81267 33498</a></div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="far fa-clock"></i>
+              <div>Mon–Sat: 10am–2pm & 5pm–8pm<br>Sun: 10am–2pm</div>
+            </div>
+            <div class="footer-payments-wrap">
+              <span>Accepted Payments</span>
+              <div class="footer-pay-icons">
+                <i class="fab fa-google-pay" title="Google Pay"></i>
+                <i class="fas fa-qrcode" title="UPI Apps"></i>
+                <i class="fas fa-credit-card" title="Debit & Credit Cards"></i>
+                <i class="fas fa-wifi" title="NFC Tap"></i>
+                <i class="fas fa-money-bill-wave" title="Cash"></i>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Col 2: Flagship Studios -->
-        <div>
-          <h4 class="footer-col-title">Flagship Studios</h4>
-          <ul class="footer-links-list">
-            <li><a href="experience-studios.html#surat" class="footer-link">Surat Studio & Factory (HQ)</a></li>
-            <li><a href="experience-studios.html#mumbai" class="footer-link">Mumbai Design Gallery</a></li>
-            <li><a href="experience-studios.html#bangalore" class="footer-link">Bangalore Flagship Atelier</a></li>
-            <li><a href="experience-studios.html#noida" class="footer-link">Delhi NCR Craft Studio</a></li>
-            <li><a href="experience-studios.html#reserve-tour" class="footer-link">Reserve VIP Consultation</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Craftsmanship & Atelier -->
-        <div>
-          <h4 class="footer-col-title">Custom Living</h4>
-          <ul class="footer-links-list">
-            <li><a href="index.html#pillars" class="footer-link">Custom Modular Beds</a></li>
-            <li><a href="index.html#pillars" class="footer-link">Modular Kitchens & Dining</a></li>
-            <li><a href="index.html#pillars" class="footer-link">Center Tables & Wardrobes</a></li>
-            <li><a href="index.html#pillars" class="footer-link">Corporate & Office Projects</a></li>
-            <li><a href="about.html" class="footer-link">Importer Heritage & Craft</a></li>
-            <li><a href="reviews.html" class="footer-link">Client Living Stories</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Concierge & Direct Connect -->
-        <div>
-          <h4 class="footer-col-title">Concierge</h4>
-          <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-sand);">
-            <div>
-              <span style="color: var(--text-muted); font-size: 0.80rem; display: block; margin-bottom: 2px;">Direct Line / Call:</span>
-              <a href="tel:+918320012921" style="color: var(--amber-light); font-weight: 600;">+91 832 001 2921</a>
-            </div>
-            <div>
-              <span style="color: var(--text-muted); font-size: 0.80rem; display: block; margin-bottom: 2px;">Instant WhatsApp:</span>
-              <a href="https://wa.me/918320012921" target="_blank" rel="noopener" style="color: #34d399; font-weight: 600;">+91 832 001 2921 (24/7)</a>
-            </div>
-            <div>
-              <span style="color: var(--text-muted); font-size: 0.80rem; display: block; margin-bottom: 2px;">Email Inquiries:</span>
-              <a href="mailto:casaanticasurat@gmail.com" style="color: var(--amber-light);">casaanticasurat@gmail.com</a>
-            </div>
-            <div style="font-size: 0.80rem; color: var(--text-muted); margin-top: 4px;">
-              📍 VIP Road, Vesu, Surat, Gujarat — Pan-India Delivery
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer Bottom Bar -->
-      <div class="footer-bottom">
-        <div>
-          © 2026 CASA ANTICA. All rights reserved. Importers & Bespoke Modular Furniture Makers.
-        </div>
-        <div class="footer-trust-tags">
-          <span>🌿 Customized to Blueprint</span>
-          <span>·</span>
-          <span>🛡️ 10-Year Structural Warranty</span>
-          <span>·</span>
-          <span>🚚 Pan-India White-Glove Installation</span>
-        </div>
-        <div class="pipoza-footer-credit">
-          <span>Website Designed & Built by</span>
-          <a href="https://pipoza.s.gy/pipoza.in" target="_blank" rel="noopener">PipoZa Dev Studio</a>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Bhagwati Dental Clinic & Implant Centre. All rights reserved.</p>
+          <p>Lead Dentist: Dr. Tanu Gupta &bull; BDS (2008), MDS Endodontics (2013), Certified Implantologist</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
-    <div class="mobile-drawer-content">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <a href="index.html" class="drawer-brand-card" aria-label="CASA ANTICA Homepage">
-          <img src="logo.png" alt="CASA ANTICA" class="drawer-logo-img" />
-        </a>
-        <button class="action-icon-btn mobile-drawer-close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-      </div>
-      <div class="mobile-drawer-links">
-        <a href="index.html" class="mobile-drawer-link">Home</a>
-        <a href="experience-studios.html" class="mobile-drawer-link">Visit Physical Studios</a>
-        <a href="about.html" class="mobile-drawer-link active">Our Heritage & Story</a>
-        <a href="reviews.html" class="mobile-drawer-link">Client Reviews & Photos</a>
-        <a href="contact.html" class="mobile-drawer-link">Contact & Inquiries</a>
-      </div>
+  <a href="https://wa.me/918126733498?text=Hello%20Dr.%20Tanu%20Gupta,%20I%20would%20like%20to%20inquire%20about%20dental%20care." class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="scroll-top-btn" aria-label="Scroll back to top"><i class="fas fa-arrow-up"></i></button>
 
-      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
-        <a href="https://wa.me/918320012921?text=Hi%20CASA%20ANTICA!%20I%20would%20like%20to%20inquire%20about%20customized%20modular%20furniture." class="btn btn-whatsapp" style="width: 100%;">
-          💬 WhatsApp: +91 832 001 2921
-        </a>
-        <!-- Atmospheric Mode & Theme Switcher (3x Richer Drawer Experience) -->
-        <div class="drawer-palette-box">
-          <div class="drawer-palette-header">
-            <span class="drawer-palette-title">Atmosphere Mode</span>
-            <span class="drawer-palette-badge" id="drawerActivePaletteBadge">☕ Coffee · 🌙 Obsidian Dark</span>
-          </div>
-
-          <!-- Mode Row: Coffee vs Classic -->
-          <div class="drawer-segmented-row" role="radiogroup" aria-label="Atmospheric Mode">
-            <button type="button" class="drawer-mode-btn active" data-mode-val="coffee" title="Coffee Mode (Warm Artisan Woods)">
-              <span>☕ Coffee</span>
-            </button>
-            <button type="button" class="drawer-mode-btn" data-mode-val="classic" title="Classic Mode (Signature White & #C42720)">
-              <span>🏛️ Classic</span>
-            </button>
-          </div>
-
-          <!-- Theme Row: Dark vs Light -->
-          <div class="drawer-theme-row" role="radiogroup" aria-label="Visual Theme">
-            <button type="button" class="drawer-theme-btn active" data-theme-val="dark" title="Dark Theme">
-              <span>🌙 Dark</span>
-            </button>
-            <button type="button" class="drawer-theme-btn" data-theme-val="light" title="Light Theme">
-              <span>☀️ Light</span>
-            </button>
-          </div>
-        </div>
-      </div>
+  <div class="mobile-sticky-bottom-bar">
+    <div class="mobile-bar-actions">
+      <a href="tel:+918126733498" class="btn btn-primary btn-sm"><i class="fas fa-phone-alt"></i> Call Clinic</a>
+      <a href="https://wa.me/918126733498?text=Hello%20Dr.%20Tanu%20Gupta,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp (&#8377;200)</a>
     </div>
   </div>
 
-  <!-- Mobile Floating Action Dock (Thumb Bar — Instant Physical & Direct Access) -->
-  <aside class="mobile-action-dock" aria-label="Mobile Quick Actions">
-    <a href="https://wa.me/918320012921?text=Hi%20CASA%20ANTICA!%20I%20would%20like%20to%20discuss%20a%20custom%20order." class="dock-item dock-item-whatsapp" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.438 5.178L2 22l4.981-1.398A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-      <span>WhatsApp</span>
-    </a>
-    <a href="tel:+918320012921" class="dock-item" aria-label="Call Us">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span>Call Desk</span>
-    </a>
-    <a href="experience-studios.html" class="dock-item" aria-label="Experience Studios">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      <span>Studios</span>
-    </a>
-    <a href="contact.html" class="dock-item" aria-label="Contact">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span>Contact</span>
-    </a>
-  </aside>
-
-  <!-- Main Folder Scripts (No Sub-Folders) -->
-  <script src="products-data.js"></script>
-  <script src="main.js"></script>
-  <script src="animations.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
